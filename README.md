@@ -26,7 +26,7 @@ A simple task manager inspired by the layout of the Windows Task Manager, where 
 2. Install dependencies:
 
 	```bash
-	npm Install
+	npm install
 	```
 	
 3. Start the API server (JSON Server):
