@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import TaskList from "./components/TaskList";
+import useFetch from "./useFetch";
 
 function App() {
+  const {
+    data: tasks,
+    isPending,
+    error,
+  } = useFetch("http://localhost:8000/tasks");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="content">
+        <TaskList tasks={tasks} isPending={isPending} error={error} />
+      </div>
     </div>
   );
 }

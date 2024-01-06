@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "body": "Concluir o relatório"
+    },
+    {
+      "id": 2,
+      "body": "Estudar para o exame de matemática"
+    },
+    {
+      "id": 3,
+      "body": "Fazer exercícios físicos por 30 minutos"
+    },
+    {
+      "id": 4,
+      "body": "Ler um capítulo do livro"
+    },
+    {
+      "id": 5,
+      "body": "Preparar o jantar"
+    }
+  ]
+}

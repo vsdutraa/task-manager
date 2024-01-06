@@ -1,13 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Raleway, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.content {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* tasklist */
+.task-list {
+  margin: auto;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.task-list h3 {
+  padding: 15px;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.task {
+  padding: 1px 15px;
+  margin: 0;
+}
+
+.task:hover {
+  background: lightblue;
+  cursor: pointer;
+}
+
+/* creating a line to the end of the list */
+.task:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+.task-list button {
+  padding: 5px 10px;
+  margin: 10px 5px;
+  background: #cfcfcf;
+  border: 1px solid black;
+  float: right;
+}
+
+.task-list button:hover {
+  background: lightblue;
 }
