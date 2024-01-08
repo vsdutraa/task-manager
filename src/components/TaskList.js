@@ -28,13 +28,12 @@ const TaskList = (props) => {
         ? tasks.map((task) => {
             return (
               <div
-                style={{
-                  background: selectedId === task.id ? "lightblue" : "none",
-                }}
                 onClick={() => {
                   handleSelect(task.id);
                 }}
-                className="task"
+                className={
+                  selectedId === task.id ? "task task-focused" : "task"
+                }
                 key={task.id}
               >
                 <p>{task.body}</p>
@@ -42,13 +41,15 @@ const TaskList = (props) => {
             );
           })
         : null}
-      <button
-        onClick={() => {
-          handleDelete(selectedId);
-        }}
-      >
-        End task
-      </button>
+      <div className="button-container">
+        <button
+          onClick={() => {
+            handleDelete(selectedId);
+          }}
+        >
+          End task
+        </button>
+      </div>
     </div>
   );
 };
